@@ -1,0 +1,35 @@
+<!doctype html>
+<!-- /*
+* (C) Copyright 2019-2025 HP Development Company, L.P.
+* Confidential computer software. Valid license from HP required for possession, use or copying.
+* Consistent with FAR 12.211 and 12.212, Commercial Computer Software,
+* Computer Software Documentation, and Technical Data for Commercial Items are licensed
+* to the U.S. Government under vendor's standard commercial license.
+*/ -->
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="target_country" content="us" />
+  <link rel="icon" href="/hp.ico" />
+  <link rel="manifest" href="/manifest.json" />
+  <title>My Account</title>
+
+  <script defer type="module" src="https://static-myaccount.stg.cd.id.hp.com/components/latest.js?app"></script>
+
+  <script>
+    const addr = new URL(window.location.href);
+    window.location.replace(`${addr.origin}/profile/`);
+  </script>
+
+</head>
+
+<body>
+  <myaccount-spinner></myaccount-spinner>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+</body>
+
+</html>
